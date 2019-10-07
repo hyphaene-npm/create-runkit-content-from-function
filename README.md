@@ -6,7 +6,7 @@ This package ( no dependencies ! ) exposes a simple function to transform a js f
 
 ## Use
 ```javascript
-import createRunkitContentFromJSCode from 'create-runkit-content-from-function'
+import createRunkitContentFromJSFunction from 'create-runkit-content-from-function';
 ```
 
 :warning: You'll need to redefine require for the function that will use require ( so it's valid js ) :warning:
@@ -37,22 +37,41 @@ const myFunction = () => {
 	const collection = [1,2];
 	const filtered = collection.filter(x => x > 2);
 	console.log(filtered);
-
 }
 ```
 
 will populate runkit with
 ```javascript
-	// demonstration of filter
-	const collection = [1,2];
-	const filtered = collection.filter(x => x > 2);
-	console.log(filtered);
+// demonstration of filter
+const collection = [1,2];
+const filtered = collection.filter(x => x > 2);
+console.log(filtered);
 ```
 
 This use case should not come so often since we usually don not want our runkit to be populated with an unique instruction such as
 ```javascript
- return 42
+return 42
  ```
+
+
+
+### In situation example :
+```javascript
+import Embed from 'react-runkit'
+import createRunkitContentFromJSFunction from 'create-runkit-content-from-function';
+
+// only to allow to require some package in the runkit
+const require = () => {}
+
+const codeToInsertInEmbedRunkit = () => {
+	const fetch = require('fetch');
+	fetch('someUrl').then(()=> console.log('fetched ! '))
+}
+
+const ComponentDisplayed = () => <Embed source={createRunkitContentFromJSFunction(codeToInsertInEmbedRunkit)}/>
+
+```
+
 ( but I wanted to let you know )
 
 Please open an issue if needed.
