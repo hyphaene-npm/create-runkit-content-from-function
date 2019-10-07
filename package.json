@@ -1,6 +1,6 @@
 {
 	"name": "create-runkit-content-from-function",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "exposes a function which transforms js function to runkit string source",
 	"author": "Maximilien Garenne <maximilien.garenne@gmail.com>;",
 	"license": "",
