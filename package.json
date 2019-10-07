@@ -1,60 +1,60 @@
 {
-	"name": "create-runkit-content-from-function",
-	"version": "0.0.1",
-	"description": "exposes a function which transforms js function to runkit string source",
-	"author": "Maximilien Garenne <maximilien.garenne@gmail.com>;",
-	"license": "",
-	"browser": "build/index.js",
-	"main": "build/index.js",
-	"scripts": {
-		"build": "NODE_ENV=dev rollup -c",
-		"prepublishOnly": "yarn build",
-		"start": "NODE_ENV=dev rollup -c -w"
-	},
-	"keywords": [
-		"rollup",
-		"react",
-		"react component",
-		"rollup react",
-		"component"
-	],
-	"homepage": "https://github.com/hyphaene-npm/create-runkit-content-from-function#readme",
-	"bugs": {
-		"url": "https://github.com/hyphaene-npm/create-runkit-content-from-function/issues"
-	},
-	"dependencies": {},
-	"devDependencies": {
-		"babel-cli": "^6.26.0",
-		"babel-core": "^6.26.0",
-		"babel-loader": "^7.1.4",
-		"babel-plugin-external-helpers": "^6.22.0",
-		"babel-plugin-transform-object-rest-spread": "^6.26.0",
-		"babel-preset-env": "^1.6.1",
-		"babel-preset-minify": "^0.4.0",
-		"babel-eslint": "^8.2.6",
-		"eslint": "^5.3.0",
-		"eslint-import-resolver-webpack": "^0.10.1",
-		"eslint-plugin-import": "^2.14.0",
-		"eslint-plugin-react": "^7.11.1",
-		"husky": "^0.14.3",
-		"rollup": "^0.57.1",
-		"rollup-plugin-babel": "^3.0.4",
-		"rollup-plugin-commonjs": "^9.1.0",
-		"rollup-plugin-filesize": "^1.5.0",
-		"rollup-plugin-import-alias": "^1.0.4",
-		"rollup-plugin-local-resolve": "^1.0.7",
-		"rollup-plugin-node-resolve": "^3.3.0",
-		"rollup-plugin-peer-deps-external": "^2.1.0",
-		"rollup-plugin-postcss": "^1.5.1",
-		"source-map-loader": "^0.2.3",
-		"versionifier": "^1.3.4"
-	},
-	"versionifier": {
-		"commitIfOnlyPackageJsonInStage": true,
-		"commitIfMultipleFilesInStage": true,
-		"push": true,
-		"commitMessage": "Updated package.json to version @@",
-		"remoteRepo": "origin",
-		"publish": true
-	}
+    "name": "create-runkit-content-from-function",
+    "version": "0.1.0",
+    "description": "exposes a function which transforms js function to runkit string source",
+    "author": "Maximilien Garenne <maximilien.garenne@gmail.com>;",
+    "license": "",
+    "browser": "build/index.js",
+    "main": "build/index.js",
+    "scripts": {
+        "build": "NODE_ENV=dev rollup -c",
+        "prepublishOnly": "yarn build",
+        "start": "NODE_ENV=dev rollup -c -w"
+    },
+    "keywords": [
+        "rollup",
+        "react",
+        "react component",
+        "rollup react",
+        "component"
+    ],
+    "homepage": "https://github.com/hyphaene-npm/create-runkit-content-from-function#readme",
+    "bugs": {
+        "url": "https://github.com/hyphaene-npm/create-runkit-content-from-function/issues"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.4",
+        "babel-plugin-external-helpers": "^6.22.0",
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
+        "babel-preset-env": "^1.6.1",
+        "babel-preset-minify": "^0.4.0",
+        "babel-eslint": "^8.2.6",
+        "eslint": "^5.3.0",
+        "eslint-import-resolver-webpack": "^0.10.1",
+        "eslint-plugin-import": "^2.14.0",
+        "eslint-plugin-react": "^7.11.1",
+        "husky": "^0.14.3",
+        "rollup": "^0.57.1",
+        "rollup-plugin-babel": "^3.0.4",
+        "rollup-plugin-commonjs": "^9.1.0",
+        "rollup-plugin-filesize": "^1.5.0",
+        "rollup-plugin-import-alias": "^1.0.4",
+        "rollup-plugin-local-resolve": "^1.0.7",
+        "rollup-plugin-node-resolve": "^3.3.0",
+        "rollup-plugin-peer-deps-external": "^2.1.0",
+        "rollup-plugin-postcss": "^1.5.1",
+        "source-map-loader": "^0.2.3",
+        "versionifier": "^1.3.4"
+    },
+    "versionifier": {
+        "commitIfOnlyPackageJsonInStage": true,
+        "commitIfMultipleFilesInStage": true,
+        "push": true,
+        "commitMessage": "Updated package.json to version @@",
+        "remoteRepo": "origin",
+        "publish": true
+    }
 }
