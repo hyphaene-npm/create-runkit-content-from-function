@@ -1,13 +1,60 @@
-# Rollup React npm(based on example-rollup-react-component-npm-package)
+# create-runkit-content-from-function
 
-`React` component "library" using [`rollup`](https://github.com/rollup/rollup) that is published to `npm`.
+## Purpose
 
-## What it does
+This package ( no dependencies ! ) exposes a simple function to transform a js function into a string that React-runkit can consume as source ( via source props)
 
-1.  Use `babel`
-2.  Use `semantic-release`
-3.  Use `sass`
-4.  Support `umd` and `es` modules
-5.  Use `storybook`
-6.  Serve component in a CRA example
-7.  Make the exported components really simple
+## Use
+```javascript
+import createRunkitContentFromJSCode from 'create-runkit-content-from-function'
+```
+
+:warning: You'll need to redefine require for the function that will use require ( so it's valid js ) :warning:
+
+such as :
+```javascript
+const require = () => {};
+```
+
+:warning: functions must be not in one line so it can work :warning:
+
+bad :
+```javascript
+const test = () => 42;
+```
+good :
+```javascript
+const test = () => {
+	return 42;
+};
+```
+
+
+general use case :
+```javascript
+const myFunction = () => {
+	// demonstration of filter
+	const collection = [1,2];
+	const filtered = collection.filter(x => x > 2);
+	console.log(filtered);
+
+}
+```
+
+will populate runkit with
+```javascript
+	// demonstration of filter
+	const collection = [1,2];
+	const filtered = collection.filter(x => x > 2);
+	console.log(filtered);
+```
+
+This use case should not come so often since we usually don not want our runkit to be populated with an unique instruction such as
+```javascript
+ return 42
+ ```
+( but I wanted to let you know )
+
+Please open an issue if needed.
+
+Happy coding !
