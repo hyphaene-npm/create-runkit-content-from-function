@@ -18,8 +18,9 @@
 		"rollup react",
 		"component"
 	],
+	"homepage": "https://github.com/hyphaene-npm/create-runkit-content-from-function#readme",
 	"bugs": {
-		"url": "/to/be/replaced"
+		"url": "https://github.com/hyphaene-npm/create-runkit-content-from-function/issues"
 	},
 	"dependencies": {},
 	"devDependencies": {
