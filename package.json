@@ -2,7 +2,7 @@
 	"name": "create-runkit-content-from-function",
 	"version": "0.0.0",
 	"description": "exposes a function which transforms js function to runkit string source",
-	"author": "Maximilien Garenne &lt;maximilien.garenne@gmail.com&gt;",
+	"author": "Maximilien Garenne <maximilien.garenne@gmail.com>;",
 	"license": "",
 	"browser": "build/index.js",
 	"main": "build/index.js",
