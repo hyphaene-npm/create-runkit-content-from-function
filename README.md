@@ -1,5 +1,7 @@
 # create-runkit-content-from-function
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/hyphaene-npm/create-runkit-content-from-function.svg)](https://greenkeeper.io/)
+
 ## Purpose
 
 This package ( no dependencies ! ) exposes a simple function to transform a js function into a string that React-runkit can consume as source ( via source props)
